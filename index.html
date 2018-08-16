@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="header">
+  <div class="container space-between align-center full-height">
+    <div class="header-left">
+      <label class="btn">
+        <input class="open" type="file" accept=".md">
+        Открыть
+      </label>
+      <button class="btn" onclick="saveFile()">Сохранить</button>
+    </div>
+    <div class="header-right">
+      <label  class="switcher">
+        <input type="checkbox">
+        <div class="switcher-btn"></div>
+      </label>
+    </div>
+  </div>
+</div>
+<div class="content">
+  <div class="container full-height space-between">
+      <div class="content-left">
+        <textarea class="mark-editor"></textarea>
+      </div>
+      <div class="content-right">
+      </div>
+  </div>
+</div>
+
+  <script src="js/mian.js"></script>
+  <script src="js/libs/showdown.min.js"></script>
+</body>
+</html>
